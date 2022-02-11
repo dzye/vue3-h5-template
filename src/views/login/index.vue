@@ -1,22 +1,14 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 @click="Login">1</h1>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue';
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup: () => {
-    const count = ref(0);
-    return { count };
-  },
-});
+<script lang="ts" setup>
+import { login } from '@/api/user';
+const Login = () => {
+  login({}).then((res) => {
+    console.log(res);
+  });
+};
 </script>
 
 <style scoped></style>

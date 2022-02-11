@@ -1,22 +1,10 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <div>{{ userStore.name }}</div>
 </template>
 
-<script lang="ts">
-import { ref, defineComponent } from 'vue';
-export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup: () => {
-    const count = ref(0);
-    return { count };
-  },
-});
-</script>
+<script lang="ts" setup>
+import { useUserStore } from '@/store/user';
 
+const userStore = useUserStore();
+</script>
 <style scoped></style>

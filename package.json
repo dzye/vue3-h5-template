@@ -8,6 +8,9 @@
   },
   "dependencies": {
     "@nutui/nutui": "^3.1.11",
+    "eslint": "^8.8.0",
+    "pinia": "^2.0.11",
+    "pinia-plugin-persist": "^0.0.93",
     "vue": "^3.0.5",
     "vue-router": "4"
   },

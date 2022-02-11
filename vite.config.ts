@@ -19,9 +19,13 @@ export default defineConfig({
       ],
     }),
   ],
-  // resolve: {
-  //   alias: [{ find: '@', replacement: resolve(__dirname, './src') }]
-  // },
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+      '@assets': path.resolve(__dirname, 'src/assets'),
+      '@api': path.resolve(__dirname, 'src/api'),
+    },
+  },
   css: {
     preprocessorOptions: {
       scss: {

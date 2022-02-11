@@ -1,5 +1,11 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"],
+      "@assets/*": ["src/assets/*"],
+      "@api/*": ["src/api/*"]
+    },
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",

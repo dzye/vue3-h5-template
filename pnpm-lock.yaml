@@ -8,10 +8,12 @@ specifiers:
   vite: ^2.1.1
   vite-plugin-style-import: ^1.2.1
   vue: ^3.0.5
+  vue-router: '4'
 
 dependencies:
   '@nutui/nutui': 3.1.16_typescript@4.5.5+vue@3.2.30
   vue: 3.2.30
+  vue-router: 4.0.12_vue@3.2.30
 
 devDependencies:
   '@vitejs/plugin-vue': 1.10.2_vite@2.8.0

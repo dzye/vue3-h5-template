@@ -14,7 +14,7 @@ export default defineConfig(({ mode }) => {
             libraryName: '@nutui/nutui',
             libraryNameChangeCase: 'pascalCase',
             resolveStyle: (name) => {
-              return `@nutui/nutui/dist/packages/${name}/index.scss`;
+              return `@nutui/nutui/dist/packages/${name.toLowerCase()}/index.scss`;
             },
           },
         ],

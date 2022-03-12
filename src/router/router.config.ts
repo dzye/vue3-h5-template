@@ -16,7 +16,7 @@ export const constantRouterMap = [
         path: '/home',
         name: 'Home',
         component: () => import('@/views/home/index.vue'),
-        meta: { title: '首页', keepAlive: true },
+        meta: { title: '首页' },
       },
       {
         path: '/user',

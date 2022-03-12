@@ -3,8 +3,6 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 import nutuiComponents from './plugins/nutui';
-// import "@nutui/nutui/dist/styles/themes/default.scss";
-console.log(import.meta.env);
 const app = createApp(App);
 
 nutuiComponents.forEach((item) => {

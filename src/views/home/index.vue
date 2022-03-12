@@ -1,22 +1,18 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1>{{ userStore.name }}</h1>
 </template>
-
 <script lang="ts">
-import { ref, defineComponent } from 'vue';
+import { defineComponent } from 'vue';
 export default defineComponent({
-  name: 'HelloWorld',
-  props: {
-    msg: {
-      type: String,
-      required: true,
-    },
-  },
-  setup: () => {
-    const count = ref(0);
-    return { count };
-  },
+  name: 'HOME',
 });
 </script>
-
-<style scoped></style>
+<script lang="ts" setup>
+import { onMounted } from 'vue';
+import { useUserStore } from '@/store/user';
+const userStore = useUserStore();
+onMounted(() => {
+  console.log(0);
+});
+</script>
+<style lang="scss" scoped></style>

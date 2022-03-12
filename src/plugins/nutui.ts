@@ -1,8 +1,10 @@
 import {
   Button,
+  Input,
   Cell,
   Icon,
   Tabbar,
+  TabbarItem,
   Toast,
   ShortPassword,
   Price,
@@ -27,11 +29,13 @@ import {
 } from '@nutui/nutui';
 const nutuiComponents = [
   Button,
+  Input,
   Cell,
   Form,
   FormItem,
   Icon,
   Tabbar,
+  TabbarItem,
   Toast,
   ShortPassword,
   Price,
